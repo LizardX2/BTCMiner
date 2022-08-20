@@ -1,0 +1,27 @@
+{
+    "settings": {
+        "checker": {
+            "filename": "check.txt"
+        },
+
+        "bruteforcer": {
+            "STRENGHT_OPTIONS": "128, 160, 228, 192, 224, 256",
+            "strenght": 128,
+            "LANGUAGE_OPTIONS": "english, french, italian, spanish, chinese_simplified, chinese_traditional, japanese, korean",
+            "language": "english",
+            "passphere": "None"
+        },
+        "general": { 
+            "failed": "failed.txt",
+            "success": "success.txt",
+            "ADDRESS_OPTIONS": "p2pkh, p2sh, p2wpkh, p2wpkh_in_p2sh, p2wsh, p2wsh_in_p2sh",
+            "addresstype" : "p2pkh",
+                "api": {
+                    "api_url": "https://chain.api.btc.com/v3/address",
+                    "api_get_data": "data",
+                    "api_get_balance": "balance",
+                    "api_get_recieved": "received"
+                }
+            }
+        }
+}
