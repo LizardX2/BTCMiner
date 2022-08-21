@@ -1,4 +1,4 @@
-# BTCMiner
+# Bitcoin Wallets Miner
 Bitcoin seeds bruteforcer / checker | First legit tool
 
 for issues or improvements contact **@LizardX2** on Telegram.
