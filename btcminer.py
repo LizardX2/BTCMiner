@@ -131,10 +131,6 @@ def main():
                 valid.write(f"{btc_address} | {balance}$ | {all_time_balance}$ | {btc_seed} | {btc_privatekey} |  {btc_entropy} | {btc_wif} \n")
                 valid.close()
             print(f"{Fore.LIGHTBLACK_EX}[{current}]{Fore.RESET} {Fore.YELLOW}{btc_address}{Fore.RESET} {Fore.LIGHTBLACK_EX}|{Fore.RESET} {Fore.LIGHTGREEN_EX}BAL: {balance}${Fore.RESET} {Fore.LIGHTBLACK_EX}|{Fore.RESET} {Fore.LIGHTWHITE_EX}SEED: {btc_seed}{Fore.RESET} {Fore.LIGHTBLACK_EX}|{Fore.RESET} {Fore.LIGHTRED_EX}PRIV: {btc_privatekey}{Fore.RESET} {Fore.LIGHTBLACK_EX}| {Fore.RESET}{Fore.BLUE}{b_config_strenght}{Fore.RESET}")
-    elif settings.lower() != "c" or settings.lower() != "b":
-        print(f"{Fore.RED}[x] The choice must be between C or B! Aborting...{Fore.RESET}")
-        exiting = input("")
-        exit()
 
     elif settings.lower() == "c":
         if os.path.isfile(config_failed) or os.path.isfile(config_success) or os.path.isfile(c_config_file):
