@@ -12,7 +12,7 @@ from hdwallet.symbols import BTC as SYMBOL
 from hdwallet.utils import generate_mnemonic
 from typing import Optional
 from colorama import Fore
-import json, requests, os, ctypes, os.path
+import json, requests, os, os.path
 from datetime import datetime
 from time import sleep
 
@@ -56,8 +56,7 @@ def center(var:str, space:int=None):
     return "\n".join((' ' * int(space)) + var for var in var.splitlines())
 
 def ui():
-    clear()
-    ctypes.windll.kernel32.SetConsoleTitleW(f"BITCOIN BRUTEFORCER / CHECKER | Made by @LizardX2 on Telegram") 
+    clear() 
     font = """
                 ▄▄▄▄   ▄▄▄█████▓ ▄████▄    █████▒▒█████   ██▀███   ▄████▄  ▓█████  ██▀███  
                 ▓█████▄ ▓  ██▒ ▓▒▒██▀ ▀█  ▓██   ▒▒██▒  ██▒▓██ ▒ ██▒▒██▀ ▀█  ▓█   ▀ ▓██ ▒ ██▒
